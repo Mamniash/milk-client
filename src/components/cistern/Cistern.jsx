@@ -1,5 +1,14 @@
 import styles from './Cistern.module.scss'
 
+/* 
+
+	это компонент Cistern. 
+	он берёт на вход в виде числа 
+	и отображает его в виде картинки 
+	(в зависимости от наполненности цистерны с молоком)
+
+*/
+
 const Cistern = ({ value }) => {
 	return (
 		<div className={styles.wrapper}>

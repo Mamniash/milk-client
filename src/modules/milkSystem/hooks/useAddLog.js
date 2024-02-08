@@ -1,5 +1,15 @@
 import { useState } from 'react'
 
+/* 
+
+этот хук отвечает за добавление логов
+а также за добавлением в цистерны молока
+
+также отсюда начинается прокидывание 
+ошибки и успеха при соответствующей валидации
+
+*/
+
 export const useAddLog = ({ cisterns, setCisterns, setLogs }) => {
 	const [lastId, setLastId] = useState(0)
 	const [error, setError] = useState()

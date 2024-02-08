@@ -3,6 +3,14 @@ import cn from 'clsx'
 import Header from './header/Header'
 import styles from './Layout.module.scss'
 
+/* 
+
+layout является частью каждой странице
+ отвечающий за маршрутизацию 
+background картинку и название
+
+*/
+
 const Layout = ({ children, bgImage, heading = ' ', backLink = '/' }) => {
 	return (
 		<section

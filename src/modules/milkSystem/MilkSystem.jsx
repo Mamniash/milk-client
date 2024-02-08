@@ -5,6 +5,18 @@ import PourInLog from '../../components/pourInLog/PourInLog'
 import styles from './MilkSystem.module.scss'
 import { useAddLog } from './hooks/useAddLog'
 
+/* 
+
+этот модуль связывает формы, статистику и сами цистерны, 
+отвечает за передачу данных
+
+так как это сугубо front-end Project 
+без связи с бэком этот модуль хранит в состоянии сами данные
+
+основная логика модуля находится в кастомном хуке
+
+*/
+
 const MilkSystem = () => {
 	const [logs, setLogs] = useState([])
 

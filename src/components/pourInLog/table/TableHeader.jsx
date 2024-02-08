@@ -1,5 +1,12 @@
 import styles from '../PourInLog.module.scss'
 
+/* 
+
+Здесь представлен компонент в виде заголовков для таблицы 
+статистике кто сколько молока заливал в цистерны
+
+*/
+
 const TableHeader = () => {
 	return (
 		<div className={styles.row}>

@@ -4,6 +4,15 @@ import styles from './MilkFormInput.module.scss'
 import { useMilkFormInput } from './hooks/useMilkFormInput'
 import Alert from '../../ui/alert/Alert'
 
+/* 
+
+	это компонент обычной формы
+	валидации формы занимается библиотека react hook form
+	основная логика находится в хуке use MilkFormInput
+	также при успехе и при ошибке выводится соответствующее поле
+
+*/
+
 const MilkFormInput = ({ addLog, error, success, setSuccess, setError }) => {
 	const { handleSubmit, register, onSubmit, errors, setType } =
 		useMilkFormInput(addLog, setError, setSuccess)

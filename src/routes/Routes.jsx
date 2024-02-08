@@ -4,6 +4,13 @@ import NotFound from '../pages/not-found/NotFound'
 
 import { routes } from './routes.data'
 
+/* 
+
+в этом компоненте используются библиотека react router dom 
+для добавления навигации со страниц not found
+
+*/
+
 const Router = () => {
 	return (
 		<BrowserRouter>

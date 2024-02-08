@@ -1,5 +1,12 @@
 import styles from '../PourInLog.module.scss'
 
+/* 
+
+Здесь представлен компонент строки таблицы 
+который отрисовывает соответственно ID, кто заливал И сколько залил
+
+*/
+
 const TableRow = ({ log }) => {
 	return (
 		<div
