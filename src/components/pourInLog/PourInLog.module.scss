@@ -1,0 +1,67 @@
+@import 'src/assets/styles/variables';
+
+.heading {
+	display: flex;
+	align-items: center;
+
+	> img {
+		margin-right: 9px;
+	}
+}
+
+.wrapper {
+	border-radius: 10px;
+	background-color: $dark-accent;
+	margin: 0 auto 30px;
+	width: 90%;
+	box-shadow: $my-bx;
+	border: $my-border;
+
+	> .row {
+		display: flex;
+		align-items: center;
+
+		> div {
+			width: 30%;
+			padding: 15px;
+			text-align: center;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			@media (max-width: $mobile) {
+				padding: 15px 10px;
+				width: 35%;
+			}
+
+			> span {
+				font-size: 20px;
+				color: $white;
+				@media (max-width: $mobile) {
+					font-size: 18px;
+				}
+			}
+
+			&:nth-child(2) {
+				width: 50%;
+				border-left: 1px solid $accent;
+				border-right: 1px solid $accent;
+				@media (max-width: $mobile) {
+					width: 40%;
+				}
+			}
+		}
+
+		&:first-child {
+			border-bottom: 1px solid $accent;
+			@media (max-width: $mobile) {
+				> div > span {
+					font-size: 18px;
+				}
+			}
+		}
+
+		&:last-child > div {
+			padding-bottom: 35px;
+		}
+	}
+}
